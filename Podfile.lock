@@ -1,0 +1,24 @@
+PODS:
+  - hpple (0.2.0)
+  - SwiftSoup (1.7.4)
+  - WKZombie (1.1.1):
+    - hpple (= 0.2.0)
+
+DEPENDENCIES:
+  - SwiftSoup
+  - WKZombie
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - hpple
+    - SwiftSoup
+    - WKZombie
+
+SPEC CHECKSUMS:
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
+  SwiftSoup: 92f5b348c131aed8af04f4326db1579ab19fa08c
+  WKZombie: 345930c44980d4d3529d5b54b131df0dc04bbb0a
+
+PODFILE CHECKSUM: e43031f91066fe60618fdd3d8fef6729c44720b8
+
+COCOAPODS: 1.5.3
