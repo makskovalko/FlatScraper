@@ -24,10 +24,11 @@ final class FlatScraper<Model> where Model: Codable {
     }
     
     private func browse() {
-        guard let url = endpoint.url(forPage: page) else { return }
-        browser.open(url)
-            >>> browser.execute(endpoint.javaScript)
-            === handle
+        endpoint.url(forPage: page) |> {
+            browser.open($0)
+                >>> browser.execute(endpoint.javaScript)
+                === handle
+        }
     }
     
     func fetchData() {
